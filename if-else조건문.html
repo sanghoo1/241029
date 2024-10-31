@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else조건문</title>
+</head>
+<body>
+  <h1>if-else 조건문</h1>
+  <script>
+    /* 
+      if-else 조건문
+
+      if(조건){ 조건이 참인경우 실행
+            실행문;    
+         } else {위의 조건이 거짓이면 실행
+          실행문;
+          
+        }
+    
+    */
+
+    //변수에 입력창을 대입해서 하루의 걸음 수를 입력 받아
+    let walk = prompt('하루의 걸음 수를 입력해주세요');
+    //prompt(), input()의 입력값은 문자열로 반환
+    console.log(typeof walk);
+    // walk = Number(walk);  숫자 데이터로 변환
+    // walk = parseInt(walk); 정수 반환
+    // walk = +walk;
+    // walk = walk * 1;
+    // walk = walk + ""; 더하기 연산자로 빈문자열을 붙여 문자열로 반환
+    console.log(typeof walk);
+    
+    //5000보 이상이면 alert ('잘하셨습니다') 출력
+    if (walk >= 5000) {
+      alert('잘하셨습니다');
+    } else{
+      alert('더 걸어야 합니다.');
+    }
+  </script>
+</body>
+</html>

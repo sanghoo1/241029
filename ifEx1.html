@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifex1</title>
+</head>
+<body>
+  <script>
+    let cost = prompt('점수를 입력해주세요');
+    if (cost > 100){
+      alert('100점 이하로만 입력해주세요');
+     
+    }else if(cost>=60){
+      alert(`${cost}점은 통과입니다`);
+    }
+    else if(cost<60){
+      alert(`${cost}점은 재평가입니다`);
+    } 
+    
+      
+    else{
+      alert('숫자만 입력해주세요');
+    }
+  </script>
+</body>
+</html>
